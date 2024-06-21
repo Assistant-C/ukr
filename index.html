@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Ukraine</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel = "icon" href =
+    "https://www.freepnglogos.com/uploads/ukraine-flag-png/circle-flag-of-ukraine-png-download-0.png"
+    type = "image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#" id="go-top" title="Вверх">↑</a>
+        <nav>
+            <div class="number">
+                <img src="img/icon_phone.png" alt="">
+                <p class="hotLine">0 800 333 123 - HotLine</p>
+            </div>
+            <div class="sozial">
+                
+                <a class="logoImage" href=""><img src="img/icon_instagram.png" title="Instagram" alt="Instagram"></a>
+                <a class="logoImage" href=" "><img src="img/icon_facebook.png" title="Facebook" alt="Facebook"></a>
+                <a class="logoImage" href=" "><img src="img/icon_tiktok.png" title="Tiktok" alt="Tiktok"></a>
+                <div class="inptMova">
+                    <input type="button" onclick="english()" value="EN"> | 
+                    <input type="button" onclick="ukrainian()" value="UA">
+                </div>
+                
+            </div>
+        </nav>
+        <div class="boxDarkTheme">
+        <div class="whiteSaveUkr">
+            <img class="SaveUkrImage" src="img/saveUkraine.png" alt="">
+            <div class="sunBlock">
+                <img class="sunLightImage" src="img/icon_sun_dark.png" alt="" id="theme">
+                <img class="sunDarkImage" src="img/icon_sun.png" alt="" id="theme2">
+            </div>
+            
+        </div>
+        <header>
+                <div class="textHeader">
+                    <div class="mainTextWhite">
+                        <p id="p1" class="togetherText">Єднаємось</p>
+                    </div>
+                    <p id="p2" class="helpText">Допоможемо нашим захисникам — допожемо Україні</p>
+                    <p id="p3" class="blueText">Приєднуйтесь до волонтерства</p>
+                    <div class="button" id="button-2">
+                        <div id="slide"></div>
+                        <a href="https://uahelpers.com/">Lets go</a>
+                    </div>
+                </div>
+                <img src="img/UkraineHome.png" alt="">
+        </header>
+        <aside>
+            <h1 id="p4" >Хто ми і в чому наша сила?</h1>
+            <img id="image" src="img/soldatUkraineFlag.png" alt="">
+            <div class="itemBox">
+                <div onclick="fun1()" id="item1" class="item1">
+                    <p id="p5" >Нинішній доленосний період України — не лише боротьба за цілісність і незалежність</p>
+                </div>
+                <div onclick="fun2()" id="item2" class="item2">
+                    <p id="p6" >Це історичний шанс довести світові, що наша держава заслуговує на щасливе майбуття</p></div>
+                <div onclick="fun3()" id="item3" class="item3">
+                    <p id="p7" >І вкотре нагадують собі й іншим націям: ворога можна перемогти лише гуртом!</p>
+                </div>
+            </div>
+        </aside>
+        <section class="comentBox">
+            <p>“</p>
+            <p id="p8" >Відгуки про нас:</p>
+            <p id="comentRandom" >Rescue from combat zones the most vulnerable - orphans, people with disabilities, foster families, those who experienced sexual violence, frail elderly.</p>
+        </section>
+        <h1 id="p9" >Наші герої</h1>
+        <section class="sliderBox">
+            <div class="btn backBox" onclick="back()"></div>
+            <div class="contaner">
+                <div id="first" class="sliderItem">
+                    <img src="img/imagePruvid.png" alt="">
+                    <div class="textItem">
+                        <h2 id="p10" >Привид</h2>
+                        <p id="p11" >Українські льотчики-винищувачі, яких набагато менше ніж російських пілотів такого ж класу, стали легендарними. Почасти й завдяки історії про аса ЗСУ на прізвисько Привид Києва.</p>
+                    </div>
+                </div>
+                <div id="second" class="sliderItem">
+                    <img src="img/hero2.jpg" alt="">
+                    <div class="textItem">
+                        <h2 id="p12" >Олександр Мацієвський</h2>
+                        <p id="p13" >6 березня в мережі з'явилося відео, на якому видно, як росіяни розстрілюють беззбройного українського полоненого. Військовий стоїть у лісі та курить в окопі, потім каже "Слава Україні", після чого в нього стріляють.</p>
+                    </div>
+                </div>
+                <div id="third" class="sliderItem">
+                    <img src="img/hero3.jpg" alt="">
+                    <div class="textItem">
+                        <h2 id="p14" >Терещук Ігор</h2>
+                        <p id="p15" >Народився і жив у Кривому Розі, поїхав в АТО старшиною. Загинув, боронячи Донецький аеропорт. 24 січня рідні та жителі Кривого Рогу попрощалися з Героєм України, "кіборгом" Терещуком Ігорем.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn nextBox" onclick="next()"></div>
+        </section>
+        <section class="helpBox">
+            <h1 id="p16" class="headTextHelp">Чим можна допомогти нашим захисникам?</h1>
+            <div class="helpItem">
+                <h2 id="p17" >1. Політична підтримка</h2>
+                <p id="p18" >Важливо підтримувати ЗСУ на політичному рівні, наприклад, шляхом укладання військових союзів</p>
+            </div>
+            <div class="helpItem">
+                <h2 id="p19" >2. Військова допомога</h2>
+                <p id="p20" >Це може включати надання військової техніки, зброї, обладнання та розвідувальної техніки</p>
+            </div>
+            <div class="helpItem">
+                <h2 id="p21" >3. Технічна підтримка</h2>
+                <p id="p22" >Надання технічної допомоги в ремонті та обслуговуванні військової техніки</p>
+            </div>
+            <div class="helpItem">
+                <h2 id="p23" >4. Гуманітарна допомога</h2>
+                <p id="p24" >Надання гуманітарної допомоги у вигляді медичного обладнання, одягу та харчування для ЗСУ</p>
+            </div>
+        </section>
+        <div class="anketaText">
+                <h1 id="p25" >Допоможи захистити країну</h1>
+                <p><b id="p26">Повідомте про ворога</b></p>
+                <p id="p27" >Завдяки вашої інформації захисники країни зможуть бачити переміщення ворога в реальному часі</p>  
+        </div>
+        <section class="anketaBox">
+            <div class="inp Name">
+                <p id="p28" >Ваше ім'я</p>
+                <input id="name" type="text" placeholder="Петро">
+            </div>
+            <div class="inp Email">
+                <p id="p29" class="emailText">E-Mail адреса</p>
+                <input id="email" type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="inp TelNUmber">
+                <p id="p30" >Телефон</p>
+                <input id="number" type="text" placeholder="+380-978-365-1283">
+            </div>
+            <div class="inpAdress">
+                <p id="p31" >Адреса</p>
+                <input id="adress" type="text" placeholder="Місто чи вулиця">
+            </div>
+            <div class="inpObjekt">
+                <p id="p32" >Що саме помітили?</p>
+                <select name="" id="objektsTechnick">
+                    <option value=" "> </option>
+                    <option value="Літак">Літак</option>
+                    <option value="Вертоліт">Вертоліт</option>
+                    <option value="Самохідний протитанковий ракетний комплекс">Самохідний протитанковий ракетний комплекс</option>
+                    <option value="Бронетранспортер">Бронетранспортер</option>
+                    <option value="Бойова машина піхоти">Бойова машина піхоти</option>
+                    <option value="Бойова машина десанту">Бойова машина десанту</option>
+                    <option value="Основний бойовий танк">Основний бойовий танк</option>
+                    <option value="Бронеавтомобіль">Бронеавтомобіль</option>
+                </select>
+            </div>
+            <button onclick="saveToPC()" class="sendBox"><p class="sendText">Send</p></button>
+        </section>
+    </div>
+        <footer>
+            <p class="footerText">Name name</p>
+        </footer>
+    </div>
+    <script src="js/script.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
